@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<title>Online HTML Editor</title>
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+            /* margin: 0;
+            padding: 0; */
+        }
+
+        body {
+            font-family: 'Times New Roman', Serif;
+        }
+
+        .logo {
+            width: 70px;
+            height: 70px;
+        }
+
+        .header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          /* margin-left: 2rem;
+          margin-right: 2rem; */
+          /*border: 1px solid black;*/
+        }
+        
+        .menu {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .menu a {
+            margin-right: 1rem;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .menu a:hover, .dropdown:hover {
+            color: #555;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;  
+            border: none;
+            outline: none;
+            color: black;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            font-weight: normal;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .search-bar input[type="search"] {
+            font-family: 'Times New Roman', Times, serif;
+            /* border: none; */
+            font-size: 16px;
+            align-items: right;
+            padding: 10px;
+            width: 20%;
+            height: 200%;
+            border-radius: 30px;
+            background-color: #fff;
+            border-color: #964B00;
+        }
+
+        button[type="submit"] {
+            font-family: 'Times New Roman', Times, serif;
+            border: #555;
+            background-color: transparent;
+            font-size: 16px;
+            margin-left: 10px;
+            cursor: pointer;
+            color: #fff;
+            background-color: #964B00;
+            border-radius: 30px;
+            padding: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 2rem 0;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .main {
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 1rem;
+        }
+
+        li {
+            /* list-style: none; */
+            margin-bottom: 0.5rem;
+            margin-left: 2rem;
+        }
+
+        .contact-info {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 20px;
+			margin: 10px;
+		}
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div>
+            <a href="index.html">
+                <img class="logo" src="https://profile.line-scdn.net/0h4pEHva3ia194MX9lYQwUCER0ZTIPH20XAFN0bl81NG5RCHwNEARzPQoxNG0HBCkBQQQhPl5iZz9c/large" style="width:70px;height:70px;"></a>
+        </div>
+        <div class="menu">
+            <div class="dropdown">
+                <button class="dropbtn">News</button>
+                <div class="dropdown-content">
+                    <a href="new.html">Product News</a>
+                    <a href="news.html">Social News</a>
+                </div>
+            </div>
+            <a href="help.html">Help</a>
+            <a href="joinus.html">Join us</a>
+            <a href="signin.html">Sign in</a>
+        </div>
+    </div>
+
+<h1 style="text-align:center;">GET HELP</h1>
+
+<div class="main">
+    <div class="container">
+        <h2 style="margin-left: 20px;">QUICK ASSISTANT</h2>
+        <p style="margin-left: 20px;">Answers to our most frequently asked questions are just one click away.</p>
+
+        <div class="row">
+            <div class="column">
+                <h2 style="text-align:center;">DISPATCH & DELIVERTY</h2>
+                <li style="margin-left: 2px;">How can I get free delivery on 92 orders?</li>
+                <li style="margin-left: 2px;">What are 92's delivery options?</li>
+                <li style="margin-left: 2px;">Can my 92 order be dispatched internationally?</li>
+            </div>
+
+            <div class="column">
+                <h2 style="text-align:center;">RETURNS</h2>
+                <li>How do I return my 92 order?</li>
+                <li>What is 92's returns policy?</li>
+                <li>Where is my refund?</li>
+            </div>
+
+            <div class="column">
+                <h2 style="text-align:center;">NINETY TWO MEMBERSHIP</h2>
+                <li>What is 92 Membership?</li>
+                <li>How do I become a 92 Member?</li>
+                <li>What are the discounts for 92</li>
+            </div>
+        </div>
+    </div> 
+</div>
+
+<footer class="footer" style="background-color:black; color: white; margin-top: 10px">
+    <div class="contact-info">
+		<div>
+			<h3>Contact Us</h3>
+		</div>
+		<div>
+			<p>Phone Number: (123) 456-7890</p>
+			<p>Email Address: example@example.com</p>
+			<p>Working Hours: Mon-Fri 9am-5pm</p>
+		</div>
+	</div>
+</footer>
+
+</body>
+</html>
